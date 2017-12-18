@@ -1,0 +1,75 @@
+
+  transforms:
+    r_shoulder_pan_joint:           [0, 0, 0, 0, 0, 1]
+    r_shoulder_lift_joint:          [0, 0, 0, 0, 1, 0]
+    r_upper_arm_roll_joint:         [0, 0, 0, 1, 0, 0]
+    r_eblow_flex_joint:             [0, 0, 0, 0, 1, 0]
+    r_forearm_roll_joint:           [0, 0, 0, 1, 0, 0]
+    r_wrist_flex_joint:             [0, 0, 0, 0, 1, 0]
+    r_wrist_roll_joint:             [0, 0, 0, 1, 0, 0]
+
+    l_shoulder_pan_joint:           [0, 0, 0, 0, 0, 1]
+    l_shoulder_lift_joint:          [0, 0, 0, 0, 1, 0]
+    l_upper_arm_roll_joint:         [0, 0, 0, 1, 0, 0]
+    l_eblow_flex_joint:             [0, 0, 0, 0, 1, 0]
+    l_forearm_roll_joint:           [0, 0, 0, 1, 0, 0]
+    l_wrist_flex_joint:             [0, 0, 0, 0, 1, 0]
+    l_wrist_roll_joint:             [0, 0, 0, 1, 0, 0]
+
+    head_mount_kinect_rgb_joint:    [1, 1, 1, 1, 1, 1]
+    l_forearm_cam_frame_joint:      [1, 1, 1, 1, 1, 1]
+    r_forearm_cam_frame_joint:      [1, 1, 1, 1, 1, 1]
+    right_arm_chain_cb:             [1, 1, 1, 0, 1, 1]
+    left_arm_chain_cb:              [1, 1, 1, 0, 1, 1]
+
+  chains:
+    right_arm_chain:
+      gearing: [0, 0, 0, 0, 0, 0, 0, 0]
+    left_arm_chain:
+      gearing: [0, 0, 0, 0, 0, 0, 0, 0]
+    head_chain:
+      gearing: [0, 0]
+    laser_chain:
+      gearing: [0]
+
+  rectified_cams:
+    wide_left_rect:
+      baseline_shift: 0
+      f_shift: 0
+      cx_shift: 0
+      cy_shift: 0
+    wide_right_rect:
+      baseline_shift: 0
+      f_shift: 0
+      cx_shift: 0
+      cy_shift: 0
+    narrow_left_rect:
+      baseline_shift: 0
+      f_shift: 0
+      cx_shift: 0
+      cy_shift: 0
+    narrow_right_rect:
+      baseline_shift: 0
+      f_shift: 0
+      cx_shift: 0
+      cy_shift: 0
+    forearm_left_rect:
+      baseline_shift: 0
+      f_shift: 0
+      cx_shift: 0
+      cy_shift: 0
+    forearm_right_rect:
+      baseline_shift: 0
+      f_shift: 0
+      cx_shift: 0
+      cy_shift: 0
+
+  tilting_lasers:
+    tilt_laser:
+      gearing: 0
+
+  checkerboards:
+    small_cb_4x5:
+      spacing_x: 0
+      spacing_y: 0
+

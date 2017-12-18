@@ -1,0 +1,7 @@
+# pack-refs with: peeled fully-peeled 
+f6cb24a490f1abbbd210dd94dbfb0b79f0099bcd refs/remotes/origin/hydro-devel
+622dd5cffabde8ecb62bd463012f904838868fb8 refs/remotes/origin/master
+0fd4a32ff0138696bfa7e780c9fc0243e16dfc70 refs/tags/1.0.1
+c62c13563a42679ae8b1273038e66ef9b15ef172 refs/tags/1.0.2
+e77214ec2ae2dfed7b724691805ad12b745fe71c refs/tags/1.0.3
+f6cb24a490f1abbbd210dd94dbfb0b79f0099bcd refs/tags/1.0.4

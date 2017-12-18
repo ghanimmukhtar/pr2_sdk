@@ -1,0 +1,11 @@
+<launch>
+
+  <node pkg="stereo_wall_detection" type="wall_extractor" name="stereo_wall_detection" output="screen" respawn="true">
+    <!-- distance threshold for SAC -->
+    <param name="distance_threshold" value="0.01" />
+    <!-- minimum number of inliers in detected plane -->
+    <param name="minimum_points" value="20000" />
+
+    <remap from="stereo_wall_detection/points2" to="narrow_stereo_textured/points2" />
+  </node>
+</launch>

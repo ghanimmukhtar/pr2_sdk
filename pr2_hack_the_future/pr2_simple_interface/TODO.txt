@@ -1,0 +1,4 @@
+Possible todo-list for Hack the Future:
+ * detect if face is visible
+ * input from PS3 joystick
+ * Mirror arms

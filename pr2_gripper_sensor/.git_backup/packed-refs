@@ -1,0 +1,14 @@
+# pack-refs with: peeled fully-peeled 
+876e76b7c540574703b52136fc5b3cd0d694b39b refs/remotes/origin/fix-catkin-install
+5685a3ed1c3a6468e412fb0c84254f131476cd2b refs/remotes/origin/fix_xml_install
+4710f1f0ab2d77911637e6091cb42f50335232ad refs/remotes/origin/hydro-devel
+3bcc20abcec621a41d7fdb74856673836535a927 refs/remotes/origin/master
+a3c50daf72877e231f9a7600f83961b2ef2d1062 refs/tags/1.0.1
+5ef93bf8dc3bcd44c00c93839e42f45da5d4e740 refs/tags/1.0.2
+4287c31a35eabf465c0392ab56802ffb7d1d8366 refs/tags/1.0.3
+60068e91c23acecaa66f23a1695c71637dce04b1 refs/tags/1.0.4
+f3e6376ecea53fc4e51c30782d53f0129b174b9a refs/tags/1.0.5
+3a1ae8e0f13bfb60f816848e9adcf8af7360a7aa refs/tags/1.0.6
+6f62fd2db84f20df045cbb249e7b64f87cccef22 refs/tags/1.0.7
+e818f9db3d532f658cec85f132ddc27e993a77b5 refs/tags/1.0.8
+b48f8fd0694f4c32c85f7b9bff8ec127c27d42d9 refs/tags/1.0.9

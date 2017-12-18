@@ -1,0 +1,20 @@
+# pack-refs with: peeled fully-peeled 
+75a296baa3d3c9d8518a385881047d71f526f2e4 refs/remotes/origin/hydro-devel
+d39d8828336fd7dba09c8eb815ed428710769ffc refs/remotes/origin/master
+6b3b85ad44ef853170ec8e6b6c764c310e8e4107 refs/remotes/origin/trunk@32239
+c98d4a64f9f5290021f01560d2375d52997b4cb4 refs/tags/1.0.1
+3c9b4bf5ccf9a6baa830e6d9356ab0863ce8db78 refs/tags/1.0.2
+aa2347d02ebd0c00ad5688db173493b8e723f83e refs/tags/boxturtle
+^6ec971f5a750cfa254fc718cade285c00f3202db
+8f044ee54efa936c20234bc40b7b000654e913d2 refs/tags/cturtle
+^230360d4e3f8dd9af1cd796c76d2b488e2d22ba6
+2845fd13731ed28608a81a203c6b1294b0857440 refs/tags/diamondback
+^738d3888454a5ea5d2dcf7f6a56d9ed63b9bb664
+3fcd1b2c15d8172379f2015ca151b9a47d70ed12 refs/tags/latest
+^37b0eaf47f52e7221e0241be9255481f82b688fb
+f58f71504a68a85c65c58767aee50f4de7a7b754 refs/tags/pr2_navigation_apps-0.1.0
+^45a264c5e06b3c9e6dac12110770d61139773bf6
+514d9be54e1514bd4598a6a07ba9e83e24d16a64 refs/tags/pr2_navigation_apps-0.1.1
+^7127cbbf7f5086c4adb72c266e61f89cf2852f95
+3e21785734cc5029010bf1cbd839c6e95cb6e4ef refs/tags/unstable
+^b26f22d3fd43d40230e632092f14ee6cc3e8a7cd

@@ -1,0 +1,8 @@
+<launch>
+
+  <include file="$(find pr2_machine)/$(env ROBOT).machine" />
+
+  <!-- navstack -->
+  <include file="$(find wg_pr2_2dnav)/pr2_2dnav.launch" />
+
+</launch>

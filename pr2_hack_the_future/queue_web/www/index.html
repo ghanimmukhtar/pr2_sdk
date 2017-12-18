@@ -1,0 +1,221 @@
+<html>
+   <head>
+      <meta charset="utf-8"/>
+      <script type="text/JavaScript" src="jquery.cookies.2.2.0.js"></script>
+
+      <script type="text/JavaScript" src="ros.js" ></script>
+      <script type="text/JavaScript" src="login.js"></script>
+      <script type="text/JavaScript" src="editor.js"></script>
+
+      <script type="text/JavaScript" src="ace/ace.js"></script>
+      <script type="text/JavaScript" src="ace/mode-python.js"></script>
+
+
+      <link rel="stylesheet" type="text/css" href="editor.css"/>
+
+      <title>Hack the Future!</title>
+   </head>
+
+   <body onload="main()" >
+      <!-- Header -->
+       <div id="header">
+         <table cellpadding="0">
+           <tr>
+             <td style="width: 53px;">
+               <img style="float: left; height: 53px;" src="images/htf.jpeg"/>
+             </td>
+             <td>
+               <p style="font-size: 20px;">PR2 Hack the Future Interface</p>
+             </td>
+             <td>
+               <p id="user">&nbsp;</p>
+             </td>
+             <td style="width: 83px;">
+               <img style="float: right; height: 53px" src="images/wg.gif"/>
+             </td>
+           </tr>
+         </table>
+       </div>
+
+      <div id="login" style="display: none">
+         <h1>Login</h1>
+
+         <form id="login_form">
+            <table>
+               <tr>
+                  <td><label for="username">Email</label></td>
+                  <td><input id="username" type="text"></input></td>
+               </tr>
+               <tr>
+                  <td><label for="password">Password</label></td>
+                  <td><input id="password" type="password"></input></td>
+               </tr>
+               <tr>
+                  <td><label for="password2">Confirm Password</label></td>
+                  <td><input id="password2" type="password"></input></td>
+               </tr>
+               <tr>
+                  <td><input type="button" value="Create Account"
+                     onClick="createAccount(this.form);"/></td>
+                  <td><input type="button" value="Login"
+                     onClick="login(this.form);"/></td>
+               </tr>
+            </table>
+         </form>
+      </div>
+
+      <div id="edit" style="display: none">
+         <h1>Edit Program</h1>
+         <form id="program_info">
+            <!-- TODO: Header above edit window:
+             Link to documentation
+
+             Duplicate program button?
+
+             View Queue
+            -->
+            <table>
+               <tr>
+                  <td><input type="button" value="New Program"
+                     onclick="newprogram(this.form);"/></td>
+                  <td><select id="program"></select></td>
+                  <td><input type="text" value="" id="program_name"/></td>
+                  <td><input type="button" value="Add to Queue"
+                     onclick="queue_program(this.form);"/></td>
+                  <td><input type="button" value="Logout" 
+                     onclick="logout();"/></td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td><input type="button" value="Load Program" 
+                     onclick="load(this.form);"/></td>
+                  <td><input type="button" value="Save Program"
+                     onclick="save(this.form);"/></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+
+               <tr>
+                  <td></td>
+                  <td>
+                     <input type="radio" name="mode" value="edit" 
+                     checked="True" id="edit_mode"
+                     onclick="ui_mode(this.form);"/>
+                     <label for="edit_mode">Edit</label>
+                  </td>
+                  <td>
+                     <input type="radio" name="mode" value="output" 
+                     id="output_mode"
+                     onclick="ui_mode(this.form);"/>
+                     <label for="output_mode">Output</label>
+                  </td>
+                  <td>
+                     <input type="radio" name="mode" value="all_programs"
+                     id="all_programs_mode"
+                     onclick="ui_mode(this.form);"/>
+                     <label for="all_programs_mode">All Programs</label>
+                  </td>
+                  <td id="admin_button" style="display: none">
+                     <input type="radio" name="mode" value="admin" 
+                     id="admin_mode"
+                     onclick="ui_mode(this.form);"/>
+                     <label for="admin_mode">Admin</label>
+                  </td>
+               </tr>
+            </table>
+
+         </form>
+         <div id="program_output" style="display: none"></div>
+         <div id="editor"></div>
+         <div id="all_programs"></div>
+         <div id="admin_panel" style="display: none">
+            <!-- TODO: admin panel
+              * Display Queue
+              * Run Programs
+              * View output?
+              -->
+         </div>
+      </div>
+
+      <div id="output">Please Wait...</div>
+
+      <div id="sample" style="display: none">#!/usr/bin/env python
+
+# startup code
+import roslib
+roslib.load_manifest('pr2_simple_interface')
+from pr2_simple_interface import *
+start()
+
+# create robot objects
+gripper = Gripper()
+arm = RobotArm()
+head = Head()
+torso = Torso()
+sound = Sound()
+
+# robot speaks
+sound.say("I'm Kiko.")
+
+# nod head
+for i in range(2):
+   head.look_at(1.0, 0.0, 0.5) # look down
+   head.wait_for()             # wait for head to stop moving
+   head.look_at(1.0, 0.0, 1.5) # look up
+   head.wait_for()
+
+# look straight ahead
+head.look_at(1.0, 0.0, 1.0)
+head.wait_for()
+
+# move arms individually
+arm.move_to([-80, 40, 30, -110, 0, 0, -5], RIGHT)
+arm.mirror(RIGHT)
+arm.wait_for(BOTH)
+
+# open grippers
+gripper.release(BOTH)
+gripper.wait_for(BOTH)
+
+# mirror arms
+arm.move_to([-20, -15, -20, -50, 30, -30, -180], RIGHT)
+arm.move_to([20, -15, 20, -50, -30, -30, 180], LEFT)
+
+# start talking before arms are done moving
+sound.say("Double high fives.")
+
+# wait for arms to finish moving
+arm.wait_for(BOTH)
+
+# wait for a slap on both hands
+gripper.wait_for_slap(BOTH)
+
+# nod up
+head.look_at(1.0, 0.0, 1.5)
+head.wait_for()
+head.look_at(1.0, 0.0, 1.0)
+head.wait_for()
+
+sound.say("Slap one hand.")
+
+if (gripper.determine_slap() == LEFT):
+    head.look_at(1.0, 1.0, 0.5)
+    head.wait_for()
+else:
+    head.look_at(1.0, -1.0, 0.0)
+    head.wait_for()
+
+#arms
+arm.move_to([70, 50, 40, -120, 100, -20, 20], LEFT)
+arm.move_to([-70, 50, -40, -120, -100, -20, -20], RIGHT)
+arm.wait_for(BOTH)
+
+gripper.close(BOTH)
+gripper.wait_for(BOTH)
+
+head.look_at(1.0, 0.0, 1.0)
+head.wait_for()
+
+sound.say("Goodbye.")</div>
+   </body>
+</html>

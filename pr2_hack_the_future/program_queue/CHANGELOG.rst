@@ -1,0 +1,28 @@
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Changelog for package program_queue
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1.1.0 (2015-12-08)
+------------------
+
+1.0.9 (2015-02-10)
+------------------
+
+1.0.8 (2014-10-14)
+------------------
+
+1.0.7 (2014-10-11)
+------------------
+* Removed Austin from maintainers
+* Added run/build depends to package.xml
+* Updated program_queue to reflect proper CMake practices
+* Contributors: TheDash
+
+1.0.5 (2014-09-17)
+------------------
+
+1.0.4 (2014-09-10)
+------------------
+
+1.0.2 (2014-09-10)
+------------------

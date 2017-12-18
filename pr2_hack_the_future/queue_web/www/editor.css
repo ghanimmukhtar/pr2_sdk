@@ -1,0 +1,83 @@
+td {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#editor {
+   position: absolute;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 240px;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+
+h1 {
+   text-align: center;
+}
+
+#login table {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#program_info table {
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+
+#program_info table input {
+   text-align: center;
+}
+
+#admin_panel table {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#header {
+  border-bottom: solid 2px;
+  height: 53px;
+  padding: 0;
+  margin: 0;
+  background-image: url('/images/header.png');
+  background-repeat: repeat-x;
+}
+
+#header div {
+  padding: 0;
+  margin: 0;
+}
+
+#header table {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#header td {
+  padding: 0;
+  margin: 0;
+}
+
+#header tr {
+  padding: 0;
+  margin: 0;
+}
+
+#header p {
+  color: white;
+}
+
+#user {
+  text-align: right;
+}

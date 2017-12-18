@@ -1,0 +1,7 @@
+float64 offset
+float64 desired_distance
+geometry_msgs/PointStamped look_point
+---
+geometry_msgs/PoseStamped base_pose
+geometry_msgs/Vector3Stamped wall_norm
+---

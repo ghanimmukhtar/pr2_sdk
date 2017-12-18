@@ -1,0 +1,58 @@
+
+  transforms:
+    right_arm_chain_cb:             [ 1, 1, 1, 0, 1, 1 ]
+    left_arm_chain_cb:              [ 1, 1, 1, 0, 1, 1 ]
+    high_def_frame_joint:           [ 1, 1, 1, 1, 1, 1 ]
+    head_mount_prosilica_joint:     [ 1, 1, 1, 1, 1, 1 ]
+
+  chains:
+    right_arm_chain:
+      gearing: [0, 0, 0, 0, 0, 0, 0, 0]
+    left_arm_chain:
+      gearing: [0, 0, 0, 0, 0, 0, 0, 0]
+    head_chain:
+      gearing: [0, 0]
+    laser_chain:
+      gearing: [0]
+
+  rectified_cams:
+    wide_left_rect:
+      baseline_shift: 0
+      f_shift: 0
+      cx_shift: 0
+      cy_shift: 0
+    wide_right_rect:
+      baseline_shift: 0
+      f_shift: 0
+      cx_shift: 0
+      cy_shift: 0
+    narrow_left_rect:
+      baseline_shift: 0
+      f_shift: 0
+      cx_shift: 0
+      cy_shift: 0
+    narrow_right_rect:
+      baseline_shift: 0
+      f_shift: 0
+      cx_shift: 0
+      cy_shift: 0
+    forearm_left_rect:
+      baseline_shift: 0
+      f_shift: 0
+      cx_shift: 0
+      cy_shift: 0
+    forearm_right_rect:
+      baseline_shift: 0
+      f_shift: 0
+      cx_shift: 0
+      cy_shift: 0
+
+  tilting_lasers: 
+    tilt_laser:
+      gearing: 0
+
+  checkerboards:
+    small_cb_4x5:
+      spacing_x: 0
+      spacing_y: 0
+

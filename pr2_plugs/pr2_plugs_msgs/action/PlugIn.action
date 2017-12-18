@@ -1,0 +1,4 @@
+geometry_msgs/Pose base_to_outlet
+---
+geometry_msgs/Pose gripper_to_plug
+---

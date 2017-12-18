@@ -1,0 +1,12 @@
+# pack-refs with: peeled fully-peeled 
+a413c9df697c4f2ed139e280df098511540f84ec refs/remotes/origin/groovy-devel
+a185419ec131f3668854970d0d34cabceb37d1f4 refs/remotes/origin/hydro-devel
+1b21f0ea6d8417ff54cddba00ab87a3542007815 refs/remotes/origin/master
+a395f95549703fd3f19cf5bfa9354be9978a20f9 refs/tags/1.0.1
+d90dc7bf75b23cacd7833404f526f4d181c8ee63 refs/tags/1.0.2
+436e13c94336bf83e29db298202ccf9c36f72e28 refs/tags/1.0.3
+8185d179979764f7a5bcd274163acfb2f9d12e64 refs/tags/1.0.4
+b033633f20797c8cf60138ca077f52e5c1fd529d refs/tags/1.0.5
+f4c74fb2a80d32b590f8db4ae9010894fc93fc51 refs/tags/1.0.6
+edaa6eb57c729c7979a4ddc6dd0b5f4732e64e69 refs/tags/1.0.7
+a185419ec131f3668854970d0d34cabceb37d1f4 refs/tags/1.0.8

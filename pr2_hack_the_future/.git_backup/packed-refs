@@ -1,0 +1,15 @@
+# pack-refs with: peeled fully-peeled 
+b467625c337683577b3bd005988dea4875c0ccef refs/remotes/origin/hydro-devel
+9cd939e1c6196a63df510b8557214c8e2ec6f2b6 refs/remotes/origin/indigo-devel
+af17b2a1ae978a5169108f73b81eaa8e36807109 refs/remotes/origin/master
+355fa87803062baefb99b2c5ce5a14719d773281 refs/remotes/origin/trainman419/fix_cmake
+c987365d081f3309a585c303ab61a34963f9823f refs/tags/1.0.1
+a8897cbf6a52620f2f7504496b086c0b40c0d276 refs/tags/1.0.2
+34d4757ef2c95820b78e872038d370e600a15eb9 refs/tags/1.0.3
+0c2e36a21cd25d38297f57cd6ef917af93e4227c refs/tags/1.0.4
+00c6f8e8df9528de7deafa28239ef60a54e28235 refs/tags/1.0.5
+3a841e96cdcfd7aaebbd1ac8c01670bc2264535a refs/tags/1.0.6
+e79c9f33c78e77f8fd27d040928d0162f22ef355 refs/tags/1.0.7
+f42c6ac0a13c09be50b60c0c8e77d6b0cd7b4dbc refs/tags/1.0.8
+b467625c337683577b3bd005988dea4875c0ccef refs/tags/1.0.9
+9cd939e1c6196a63df510b8557214c8e2ec6f2b6 refs/tags/1.1.0
