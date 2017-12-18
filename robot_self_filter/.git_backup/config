@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/PR2/robot_self_filter.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "indigo-devel"]
+	remote = origin
+	merge = refs/heads/indigo-devel
